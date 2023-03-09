@@ -1,0 +1,76 @@
+﻿{
+  "FactoryChimes": [
+    {
+      "Name": "おはよう",
+      "Time": "08:10",
+      "Sound": "01おはよう-始業時間5分前.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "朝礼",
+      "Time": "08:15",
+      "Sound": "03朝礼を始めます.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "作業ははじまっていますね",
+      "Time": "08:30",
+      "Sound": "05作業は始まっていますね.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "休憩時間です",
+      "Time": "10:00",
+      "Sound": "06休憩時間です.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "休憩時間が終わりました",
+      "Time": "10:10",
+      "Sound": "07休憩時間が終わりました.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "お昼の休憩時間です",
+      "Time": "12:00",
+      "Sound": "08お昼の休憩時間です.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "始業5分前です",
+      "Time": "12:35",
+      "Sound": "09始業5分前です.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "午後の始業時間です",
+      "Time": "12:40",
+      "Sound": "10午後の始業時間です.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "休憩時間です",
+      "Time": "15:00",
+      "Sound": "11休憩時間です.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "休憩時間が終わりました",
+      "Time": "15:10",
+      "Sound": "12休憩時間が終わりました-仕上げ.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "お仕事ごくろうさまでした",
+      "Time": "17:15",
+      "Sound": "13お仕事ごくろうさまでした.wav",
+      "IsEnable": true
+    },
+    {
+      "Name": "お仕事ごくろうさまでした",
+      "Time": "17:30",
+      "Sound": "13お仕事ごくろうさまでした.wav",
+      "IsEnable": true
+    }
+  ]
+}

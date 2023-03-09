@@ -1,0 +1,35 @@
+﻿<Window x:Class="FactoryChime.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FactoryChime"
+        mc:Ignorable="d"
+        Title="Factory Chime" Height="600" Width="500" 
+        ResizeMode="NoResize"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True">
+    
+    <ui:NavigationView
+        Name="NaviView"
+        IsBackButtonVisible="Collapsed"
+        IsSettingsVisible="False"
+        IsTitleBarAutoPaddingEnabled="False"
+        PaneDisplayMode="Left"
+        PaneTitle=""
+        IsPaneToggleButtonVisible="False"
+        IsPaneOpen="False"
+        >
+        <ui:NavigationView.MenuItems>
+            <ui:NavigationViewItem Icon="Home" IsSelected="True" Tag="{x:Static local:NaviIcon.Home}"/>
+
+            <!--<ui:NavigationViewItem Icon="Add" Tag="{x:Static local:NaviIcon.Add}"/>-->
+
+            <ui:NavigationViewItem Icon="Edit" Tag="{x:Static local:NaviIcon.Edit}"/>
+
+        </ui:NavigationView.MenuItems>
+        <ScrollViewer Margin="0,0,0,12">
+            <ui:Frame x:Name="ContentFrame" Padding="12,0,12,12" />
+        </ScrollViewer>
+    </ui:NavigationView>
+</Window>
