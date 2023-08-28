@@ -54,11 +54,11 @@ namespace FactoryChime.Pages
                 var ct = now.ToString("HH:mm");
                 var ss = now.Second;
                 
-                if(MemoryStorage.Instance.FactoryChimeSchedules.ContainsKey(ct) && ss == 0)
+                if(MemoryStorage.Instance.FactoryChimeSchedules.ContainsKey(ct))
                 {
                     var schedule = MemoryStorage.Instance.FactoryChimeSchedules[ct];
                     
-                    //if (schedule.Replayed) { return; }
+                    if (schedule.Replayed) { return; }
 
                     var player = schedule.SoundPlayer;
                     
@@ -67,13 +67,14 @@ namespace FactoryChime.Pages
                         player.PlaySync();
 
                         var schedule = GetNextSchedule();
+                        schedule.Replayed = false;
                         Dispatcher.Invoke(() =>
                         {
                             tbNextPlayChime.Text = $"{schedule!.Name}\n{schedule!.Time}";
                         });
                     });
 
-                    //schedule.Replayed = true;
+                    schedule.Replayed = true;
                 }
             };
             timer.Start();

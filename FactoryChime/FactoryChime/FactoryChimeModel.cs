@@ -26,7 +26,7 @@ namespace FactoryChime
         }
 
         public static MemoryStorage Instance { get; } = new MemoryStorage();
-        public Dictionary<string, FactoryChimeSchedule> FactoryChimeSchedules { get; } = new Dictionary<string, FactoryChimeSchedule>(); 
+        public SortedDictionary<string, FactoryChimeSchedule> FactoryChimeSchedules { get; } = new SortedDictionary<string, FactoryChimeSchedule>(); 
 
         public void Load()
         {
